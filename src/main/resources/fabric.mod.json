@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "utilitiesmod",
+	"version": "${version}",
+	"name": "Utilities",
+	"description": "Utilities for Minecraft",
+	"authors": [
+		"ZeusMC10"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/utilitiesmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.zeus.utilitiesmod.Utilities"
+		],
+		"client": [
+			"com.zeus.utilitiesmod.UtilitiesClient"
+		]
+	},
+	"mixins": [
+		"utilitiesmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
